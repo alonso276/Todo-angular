@@ -1,0 +1,10 @@
+<!-- estamos interactuando con tarea creada y lo lanzo sobre la funcion que yo quiera -->
+<!-- output name + any name func + event que reoge tarea-->
+
+<div>
+  <app-formulario (tareaCreada)="onTareaCreada($event)"></app-formulario>
+</div>
+<!-- inyectamos el input desde el hijo [] porque luego va una variable-->
+<div>
+  <app-lista [tareas]="arrTareas"></app-lista>
+</div>
